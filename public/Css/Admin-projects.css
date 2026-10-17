@@ -1,0 +1,919 @@
+/* =========================================================
+   PROJECTS ADMIN PAGE
+   ========================================================= */
+
+.projects-admin-page {
+    width: 100%;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.projects-admin-header {
+    background: #ffffff;
+    border: 1px solid #e9e4e1;
+    border-radius: 16px;
+    padding: 24px 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+}
+
+.projects-admin-header-content h5 {
+    margin: 0 0 6px;
+
+    color: #151515;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.projects-admin-header-content p {
+    margin: 0;
+
+    color: #8a8582;
+
+    font-size: 13px;
+}
+
+/* =========================================================
+   ADD PROJECT BUTTON
+   ========================================================= */
+
+.projects-admin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 20px;
+
+    background: #b9795c;
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border: none;
+
+    transition: all 0.25s ease;
+}
+
+.projects-admin-btn:hover {
+    background: #9f6249;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.projects-admin-card {
+    background: #ffffff;
+
+    border: 1px solid #e9e4e1;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.projects-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.projects-table thead {
+    background: #faf8f7;
+}
+
+.projects-table th {
+    padding: 17px 20px;
+
+    color: #77716e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    border-bottom: 1px solid #e9e4e1;
+
+    white-space: nowrap;
+}
+
+.projects-table td {
+    padding: 18px 20px;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #f0ece9;
+}
+
+.projects-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.projects-table tbody tr:hover {
+    background: #fcfaf9;
+}
+
+.projects-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================================
+   PROJECT NAME
+   ========================================================= */
+
+.project-admin-name-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 280px;
+}
+
+.project-admin-image {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #f4e8e2;
+
+    color: #b9795c;
+
+    font-size: 22px;
+}
+
+.project-admin-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.project-admin-title {
+    margin-bottom: 4px;
+
+    color: #151515;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.project-admin-description {
+    max-width: 280px;
+
+    color: #99918d;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.project-category {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: #f7f1ee;
+
+    color: #9f6249;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   HOME STATUS
+   ========================================================= */
+
+.project-home-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.project-home-status.active {
+    background: #edf7ef;
+
+    color: #4d8a58;
+}
+
+.project-home-status.inactive {
+    background: #f5f3f2;
+
+    color: #8b8582;
+}
+
+/* =========================================================
+   PROJECT STATUS
+   ========================================================= */
+
+.project-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 11px;
+
+    border-radius: 50px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.project-status.active {
+    background: #eaf7ee;
+
+    color: #3d8a50;
+}
+
+.project-status.inactive {
+    background: #f5eeee;
+
+    color: #a66c6c;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.project-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.project-action-btn {
+    width: 36px;
+    height: 36px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #f6f2f0;
+
+    color: #8c5d49;
+
+    border: none;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.project-action-btn:hover {
+    background: #b9795c;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.project-delete-btn:hover {
+    background: #b95c5c;
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.projects-empty {
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.projects-empty-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: #f4e8e2;
+
+    color: #b9795c;
+
+    font-size: 32px;
+}
+
+.projects-empty h3 {
+    margin-bottom: 8px;
+
+    color: #222;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.projects-empty p {
+    margin-bottom: 24px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+/* =========================================================
+   EMPTY STATE BUTTON
+   ========================================================= */
+
+.add-project-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 20px;
+
+    background: #b9795c;
+
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.add-project-btn:hover {
+    background: #9f6249;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 992px) {
+    .projects-admin-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .projects-admin-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-table th,
+    .projects-table td {
+        padding: 14px;
+    }
+
+    .project-admin-name-box {
+        min-width: 230px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-admin-header {
+        padding: 20px;
+    }
+
+    .projects-admin-card {
+        border-radius: 12px;
+    }
+
+    .project-admin-image {
+        width: 45px;
+        height: 45px;
+    }
+}
+/* =========================================================
+   PROJECT FORM
+   ========================================================= */
+
+.projects-form-card {
+    background: #ffffff;
+    border: 1px solid #e9e4e1;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.projects-form-section {
+    padding: 28px;
+    border-bottom: 1px solid #eee9e6;
+}
+
+.projects-form-section:last-of-type {
+    border-bottom: none;
+}
+
+/* =========================================================
+   SECTION TITLE
+   ========================================================= */
+
+.projects-form-section-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 25px;
+}
+
+.projects-form-section-title > i {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f5e9e3;
+    color: #b9795c;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+.projects-form-section-title h6 {
+    margin: 2px 0 5px;
+
+    color: #222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.projects-form-section-title p {
+    margin: 0;
+
+    color: #99918d;
+    font-size: 12px;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.projects-form-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #373230;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.projects-form-label span {
+    color: #b95c5c;
+}
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.projects-form-control {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #ddd6d2;
+
+    border-radius: 10px;
+
+    color: #333;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+.projects-form-control::placeholder {
+    color: #aaa3a0;
+}
+
+.projects-form-control:focus {
+    border-color: #b9795c;
+
+    box-shadow: 0 0 0 3px rgba(185, 121, 92, 0.1);
+}
+
+textarea.projects-form-control {
+    resize: vertical;
+    min-height: 115px;
+}
+
+/* =========================================================
+   HELP TEXT
+   ========================================================= */
+
+.projects-form-help {
+    margin-top: 7px;
+
+    color: #99918d;
+
+    font-size: 11px;
+}
+
+/* =========================================================
+   INPUT GROUP
+   ========================================================= */
+
+.projects-input-group {
+    position: relative;
+}
+
+.projects-input-group > span {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #b9795c;
+
+    font-size: 16px;
+
+    z-index: 2;
+}
+
+.projects-input-group .projects-form-control {
+    padding-left: 40px;
+}
+
+/* =========================================================
+   TOGGLE CARD
+   ========================================================= */
+
+.projects-toggle-card {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px;
+
+    background: #faf8f7;
+
+    border: 1px solid #ebe5e2;
+
+    border-radius: 13px;
+}
+
+.projects-toggle-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.projects-toggle-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f1e1da;
+
+    color: #a9694e;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+}
+
+.projects-toggle-icon.home {
+    background: #edf5ef;
+    color: #56805d;
+}
+
+.projects-toggle-content h6 {
+    margin: 0 0 4px;
+
+    color: #292523;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.projects-toggle-content p {
+    margin: 0;
+
+    color: #99918d;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
+   BOOTSTRAP SWITCH
+   ========================================================= */
+
+.projects-toggle-card .form-check {
+    margin: 0;
+}
+
+.projects-toggle-card .form-check-input {
+    width: 42px;
+    height: 22px;
+
+    cursor: pointer;
+}
+
+.projects-toggle-card .form-check-input:checked {
+    background-color: #b9795c;
+    border-color: #b9795c;
+}
+
+/* =========================================================
+   FORM FOOTER
+   ========================================================= */
+
+.projects-form-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    padding: 22px 28px;
+
+    background: #faf8f7;
+
+    border-top: 1px solid #eee9e6;
+}
+
+/* =========================================================
+   CANCEL BUTTON
+   ========================================================= */
+
+.projects-cancel-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #ddd6d2;
+
+    color: #77716e;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.projects-cancel-btn:hover {
+    background: #f5f1ef;
+    color: #55504d;
+}
+
+/* =========================================================
+   SAVE BUTTON
+   ========================================================= */
+
+.projects-save-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 22px;
+
+    background: #b9795c;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.projects-save-btn:hover {
+    background: #9f6249;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   FORM RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .projects-form-section {
+        padding: 22px 18px;
+    }
+
+    .projects-form-footer {
+        padding: 18px;
+
+        flex-direction: column-reverse;
+    }
+
+    .projects-cancel-btn,
+    .projects-save-btn {
+        width: 100%;
+    }
+
+    .projects-toggle-card {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-form-section-title {
+        gap: 10px;
+    }
+
+    .projects-form-section-title > i {
+        width: 36px;
+        height: 36px;
+    }
+
+    .projects-toggle-content p {
+        max-width: 180px;
+    }
+}
+/* =========================================================
+   EDIT PROJECT MEDIA PREVIEW
+   ========================================================= */
+
+.project-edit-preview {
+    width: 100%;
+    height: 190px;
+
+    overflow: hidden;
+
+    background: #f7f3f1;
+
+    border: 1px solid #e5dedb;
+    border-radius: 12px;
+}
+
+.project-edit-preview img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.project-edit-video {
+    width: 100%;
+    height: 190px;
+
+    overflow: hidden;
+
+    background: #171515;
+
+    border-radius: 12px;
+}
+
+.project-edit-video video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.project-edit-no-media {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background: #faf8f7;
+
+    border: 1px dashed #ddd6d2;
+
+    border-radius: 12px;
+
+    color: #aaa29e;
+
+    font-size: 12px;
+}
+
+.project-edit-no-media i {
+    font-size: 30px;
+    color: #c6bbb5;
+}

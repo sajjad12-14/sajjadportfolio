@@ -1,0 +1,464 @@
+.about-page-hero {
+    padding: 110px 0 100px;
+    background: #0b0b0b;
+    color: #fff;
+    overflow: hidden;
+}
+
+.about-page-label,
+.about-section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #b9795c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.about-page-title {
+    max-width: 850px;
+    margin-bottom: 25px;
+    font-size: clamp(45px, 6vw, 78px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.about-page-title span {
+    display: block;
+    color: #b9795c;
+}
+
+.about-page-intro {
+    max-width: 680px;
+    margin-bottom: 35px;
+    color: #b8b8b8;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.about-page-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.about-page-primary-btn,
+.about-page-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-page-primary-btn {
+    background: #b9795c;
+    color: #fff;
+}
+
+.about-page-primary-btn:hover {
+    background: #a9674d;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.about-page-secondary-btn {
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.about-page-secondary-btn:hover {
+    border-color: #b9795c;
+    color: #b9795c;
+    transform: translateY(-3px);
+}
+
+
+/* PROFILE CARD */
+
+.about-profile-card {
+    position: relative;
+    max-width: 390px;
+    margin: auto;
+    padding: 14px;
+    background: #171717;
+    border: 1px solid #2c2c2c;
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+}
+
+.about-profile-image-wrapper {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 17px;
+    background: #242424;
+}
+
+.about-profile-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about-profile-content {
+    padding: 22px 12px 10px;
+}
+
+.about-profile-content h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about-profile-content p {
+    margin-bottom: 15px;
+    color: #b9795c;
+}
+
+.about-profile-content span {
+    color: #999;
+    font-size: 13px;
+}
+
+.about-profile-line {
+    width: 45px;
+    height: 2px;
+    margin-bottom: 12px;
+    background: #b9795c;
+}
+
+
+/* WHO I AM */
+
+.about-who-section {
+    padding: 110px 0;
+    background: #fff;
+    color: #151515;
+}
+
+.about-section-title {
+    margin: 0;
+    font-size: clamp(35px, 4vw, 58px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.about-section-title span {
+    color: #b9795c;
+}
+
+.about-large-text {
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.about-normal-text,
+.about-section-description {
+    color: #777;
+    line-height: 1.9;
+}
+
+
+/* JOURNEY */
+
+.about-journey-section {
+    padding: 110px 0;
+    background: #f7f5f3;
+}
+
+.about-journey-section .about-section-title {
+    margin-bottom: 20px;
+}
+
+.about-section-description {
+    max-width: 650px;
+}
+
+.about-journey-card {
+    position: relative;
+    height: 100%;
+    padding: 35px;
+    background: #fff;
+    border: 1px solid #e8e3df;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.about-journey-card:hover {
+    transform: translateY(-8px);
+    border-color: #b9795c;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.about-card-number {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    color: #ddd;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.about-card-icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #f4e8e2;
+    color: #b9795c;
+    font-size: 25px;
+}
+
+.about-journey-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about-journey-card p {
+    margin: 0;
+    color: #777;
+    line-height: 1.8;
+}
+
+
+/* EDUCATION */
+
+.about-education-section {
+    padding: 110px 0;
+    background: #fff;
+}
+
+.education-item {
+    display: flex;
+    gap: 30px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.education-year {
+    min-width: 105px;
+    color: #b9795c;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.education-content h3 {
+    margin-bottom: 7px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.education-content p {
+    margin: 0;
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* WHAT I DO */
+
+.about-services-section {
+    padding: 110px 0;
+    background: #0b0b0b;
+    color: #fff;
+}
+
+.about-service-card {
+    height: 100%;
+    padding: 35px;
+    border: 1px solid #292929;
+    border-radius: 20px;
+    background: #121212;
+    transition: all 0.3s ease;
+}
+
+.about-service-card:hover {
+    transform: translateY(-7px);
+    border-color: #b9795c;
+}
+
+.about-service-card > i {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #b9795c;
+    font-size: 38px;
+}
+
+.about-service-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about-service-card p {
+    margin: 0;
+    color: #999;
+    line-height: 1.8;
+}
+
+
+/* CAREER GOAL */
+
+.about-goal-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.about-goal-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 55px;
+    border-radius: 25px;
+    background: #151515;
+    color: #fff;
+}
+
+.about-goal-card h2 {
+    max-width: 750px;
+    margin-bottom: 20px;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.about-goal-card h2 span {
+    color: #b9795c;
+}
+
+.about-goal-card p {
+    max-width: 700px;
+    margin: 0;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.about-goal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 14px 23px;
+    border-radius: 50px;
+    background: #b9795c;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-goal-btn:hover {
+    background: #a9674d;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .about-page-hero {
+        padding: 80px 0;
+    }
+
+    .about-profile-card {
+        max-width: 450px;
+    }
+
+    .about-profile-image-wrapper {
+        height: 430px;
+    }
+
+    .about-who-section,
+    .about-journey-section,
+    .about-education-section,
+    .about-services-section {
+        padding: 80px 0;
+    }
+
+    .about-goal-card {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .about-page-title {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .about-page-intro {
+        font-size: 15px;
+    }
+
+    .about-page-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-profile-image-wrapper {
+        height: 350px;
+    }
+
+    .about-large-text {
+        font-size: 18px;
+    }
+
+    .education-item {
+        gap: 15px;
+    }
+
+    .education-year {
+        min-width: 85px;
+        font-size: 12px;
+    }
+
+    .about-goal-card {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .about-page-title {
+        font-size: 37px;
+    }
+
+    .about-profile-image-wrapper {
+        height: 300px;
+    }
+
+    .about-journey-card,
+    .about-service-card {
+        padding: 28px;
+    }
+
+    .education-item {
+        display: block;
+    }
+
+    .education-year {
+        margin-bottom: 8px;
+    }
+
+}

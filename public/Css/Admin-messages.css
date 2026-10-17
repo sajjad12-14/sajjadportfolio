@@ -1,0 +1,684 @@
+/* =========================================================
+   MESSAGES ADMIN PAGE
+   ========================================================= */
+
+.messages-admin-page {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.messages-admin-header {
+    background: #ffffff;
+
+    border: 1px solid #e9e4e1;
+
+    border-radius: 16px;
+
+    padding: 24px 26px;
+
+    margin-bottom: 24px;
+}
+
+.messages-admin-header-content h5 {
+    margin: 0 0 6px;
+
+    color: #151515;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.messages-admin-header-content p {
+    margin: 0;
+
+    color: #8a8582;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.messages-admin-card {
+    background: #ffffff;
+
+    border: 1px solid #e9e4e1;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.messages-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.messages-table thead {
+    background: #faf8f7;
+}
+
+.messages-table th {
+    padding: 17px 20px;
+
+    color: #77716e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+    border-bottom: 1px solid #e9e4e1;
+
+    white-space: nowrap;
+}
+
+.messages-table td {
+    padding: 17px 20px;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #f0ece9;
+}
+
+.messages-table tbody tr {
+    transition: background .2s ease;
+}
+
+.messages-table tbody tr:hover {
+    background: #fcfaf9;
+}
+
+.messages-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   UNREAD MESSAGE
+   ========================================================= */
+
+.messages-table tbody tr.message-unread {
+    background: #fffaf7;
+}
+
+.messages-table tbody tr.message-unread:hover {
+    background: #fff6f1;
+}
+
+
+/* =========================================================
+   USER
+   ========================================================= */
+
+.message-user-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 220px;
+}
+
+.message-user-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f4e8e2;
+
+    color: #a9694e;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.message-user-name {
+    margin-bottom: 3px;
+
+    color: #25211f;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.message-user-email {
+    color: #99918d;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   SUBJECT
+   ========================================================= */
+
+.message-subject {
+    max-width: 190px;
+
+    color: #3b3532;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   MESSAGE PREVIEW
+   ========================================================= */
+
+.message-preview {
+    max-width: 260px;
+
+    color: #8e8783;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.message-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.message-status.unread {
+    background: #f8e8df;
+
+    color: #a9694e;
+}
+
+.message-status.read {
+    background: #edf6ef;
+
+    color: #56805d;
+}
+
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+.message-date {
+    color: #77716e;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.message-date small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #aaa39f;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.message-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.message-action-btn {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f6f2f0;
+
+    color: #8c5d49;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.message-action-btn:hover {
+    background: #b9795c;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.message-delete-btn:hover {
+    background: #b95c5c;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.messages-empty {
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.messages-empty-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f4e8e2;
+
+    color: #b9795c;
+
+    border-radius: 20px;
+
+    font-size: 31px;
+}
+
+.messages-empty h3 {
+    margin-bottom: 8px;
+
+    color: #222;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.messages-empty p {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .messages-table th,
+    .messages-table td {
+        padding: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .messages-admin-header {
+        padding: 20px;
+    }
+
+    .messages-admin-card {
+        border-radius: 12px;
+    }
+
+}
+/* =========================================================
+   MESSAGE DETAILS PAGE
+   ========================================================= */
+
+.message-details-page {
+    width: 100%;
+}
+
+.message-details-header {
+    background: #ffffff;
+    border: 1px solid #e9e4e1;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.message-details-header h5 {
+    margin: 0 0 6px;
+    color: #151515;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.message-details-header p {
+    margin: 0;
+    color: #8a8582;
+    font-size: 13px;
+}
+
+.message-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #f6f2f0;
+    color: #8c5d49;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all .25s ease;
+}
+
+.message-back-btn:hover {
+    background: #b9795c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* MESSAGE CARD */
+
+.message-details-card {
+    background: #ffffff;
+    border: 1px solid #e9e4e1;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+
+/* USER */
+
+.message-details-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee9e6;
+}
+
+.message-details-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.message-details-avatar {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f4e8e2;
+    color: #a9694e;
+
+    border-radius: 14px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.message-details-user h4 {
+    margin: 0 0 4px;
+    color: #25211f;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.message-details-user a {
+    color: #a9694e;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.message-details-user a:hover {
+    text-decoration: underline;
+}
+
+
+/* DATE */
+
+.message-details-date {
+    text-align: right;
+    color: #77716e;
+    font-size: 12px;
+}
+
+.message-details-date span {
+    display: block;
+}
+
+.message-details-date small {
+    display: block;
+    margin-top: 4px;
+    color: #aaa39f;
+    font-size: 10px;
+}
+
+
+/* STATUS */
+
+.message-details-status {
+    padding: 20px 0 5px;
+}
+
+
+/* SECTIONS */
+
+.message-details-section {
+    margin-top: 25px;
+}
+
+.message-details-section label {
+    display: block;
+    margin-bottom: 9px;
+
+    color: #77716e;
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.message-details-subject {
+    padding: 15px 17px;
+
+    background: #faf8f7;
+    border: 1px solid #eee9e6;
+    border-radius: 10px;
+
+    color: #302b29;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.message-full-text {
+    min-height: 180px;
+    padding: 18px 20px;
+
+    background: #faf8f7;
+    border: 1px solid #eee9e6;
+    border-radius: 10px;
+
+    color: #5e5753;
+    font-size: 13px;
+    line-height: 1.8;
+
+    white-space: normal;
+}
+
+
+/* ACTIONS */
+
+.message-details-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 30px;
+    padding-top: 24px;
+
+    border-top: 1px solid #eee9e6;
+}
+
+.message-details-actions form {
+    margin: 0;
+}
+
+.message-reply-btn,
+.message-mark-read-btn,
+.message-delete-full-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 40px;
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.message-reply-btn {
+    background: #b9795c;
+    color: #ffffff;
+}
+
+.message-reply-btn:hover {
+    background: #9f6249;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.message-mark-read-btn {
+    background: #edf6ef;
+    color: #56805d;
+}
+
+.message-mark-read-btn:hover {
+    background: #56805d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.message-delete-full-btn {
+    background: #f8eeee;
+    color: #a75d5d;
+}
+
+.message-delete-full-btn:hover {
+    background: #b95c5c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .message-details-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .message-details-card {
+        padding: 20px;
+    }
+
+    .message-details-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .message-details-date {
+        text-align: left;
+    }
+
+    .message-details-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .message-reply-btn,
+    .message-mark-read-btn,
+    .message-delete-full-btn {
+        width: 100%;
+    }
+
+}

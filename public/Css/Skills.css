@@ -1,0 +1,440 @@
+/* ==========================================
+   SKILLS PAGE
+========================================== */
+
+.skills-page-hero {
+    padding: 110px 0 100px;
+    background: #0b0b0b;
+    color: #fff;
+    overflow: hidden;
+}
+
+.skills-page-label,
+.skills-section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #b9795c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.skills-page-title {
+    max-width: 800px;
+    margin-bottom: 25px;
+    font-size: clamp(45px, 6vw, 76px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.skills-page-title span {
+    display: block;
+    color: #b9795c;
+}
+
+.skills-page-intro {
+    max-width: 680px;
+    margin-bottom: 35px;
+    color: #b8b8b8;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.skills-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skills-primary-btn,
+.skills-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.skills-primary-btn {
+    background: #b9795c;
+    color: #fff;
+}
+
+.skills-primary-btn:hover {
+    background: #a9674d;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.skills-secondary-btn {
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.skills-secondary-btn:hover {
+    border-color: #b9795c;
+    color: #b9795c;
+    transform: translateY(-3px);
+}
+
+
+/* HERO CARD */
+
+.skills-hero-card {
+    max-width: 420px;
+    margin: auto;
+    padding: 25px;
+    background: #151515;
+    border: 1px solid #2d2d2d;
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .4);
+}
+
+.skills-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #292929;
+}
+
+.skills-card-top span {
+    color: #999;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.skills-card-top i {
+    color: #b9795c;
+    font-size: 22px;
+}
+
+.skills-card-main {
+    padding: 35px 10px;
+    text-align: center;
+}
+
+.skills-main-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #2b211d;
+    color: #b9795c;
+    font-size: 32px;
+}
+
+.skills-card-main h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.skills-card-main p {
+    margin: 0;
+    color: #999;
+    line-height: 1.8;
+}
+
+.skills-card-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills-card-footer span {
+    padding: 7px 13px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    color: #bbb;
+    font-size: 12px;
+}
+
+
+/* TECHNICAL SKILLS */
+
+.technical-skills-section {
+    padding: 110px 0;
+    background: #fff;
+    color: #151515;
+}
+
+.skills-section-title {
+    margin: 0 0 20px;
+    font-size: clamp(35px, 4vw, 58px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.skills-section-title span {
+    color: #b9795c;
+}
+
+.skills-section-description {
+    max-width: 680px;
+    color: #777;
+    line-height: 1.9;
+}
+
+
+/* SKILL CARD */
+
+.skill-page-card {
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    padding: 22px;
+    background: #fff;
+    border: 1px solid #e8e3df;
+    border-radius: 16px;
+    transition: all .3s ease;
+}
+
+.skill-page-card:hover {
+    transform: translateY(-7px);
+    border-color: #b9795c;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .08);
+}
+
+.skill-card-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #f4e8e2;
+    color: #b9795c;
+    font-size: 27px;
+}
+
+.skill-card-content {
+    flex: 1;
+}
+
+.skill-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-card-heading h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skill-card-heading span {
+    color: #b9795c;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.skill-card-content p {
+    min-height: 75px;
+    margin-bottom: 18px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.skill-progress {
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #eee;
+}
+
+.skill-progress span {
+    display: block;
+    height: 100%;
+    border-radius: 50px;
+    background: #b9795c;
+}
+
+
+/* APPROACH */
+
+.skills-approach-section {
+    padding: 110px 0;
+    background: #f7f5f3;
+}
+
+.approach-card {
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e8e3df;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-6px);
+    border-color: #b9795c;
+}
+
+.approach-card i {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #b9795c;
+    font-size: 30px;
+}
+
+.approach-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color: #ddd;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.approach-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.approach-card p {
+    margin: 0;
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* CTA */
+
+.skills-cta-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.skills-cta-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 55px;
+    border-radius: 25px;
+    background: #151515;
+    color: #fff;
+}
+
+.skills-cta-card h2 {
+    max-width: 700px;
+    margin-bottom: 18px;
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.skills-cta-card h2 span {
+    color: #b9795c;
+}
+
+.skills-cta-card p {
+    max-width: 680px;
+    margin: 0;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.skills-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 14px 24px;
+    border-radius: 50px;
+    background: #b9795c;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.skills-cta-btn:hover {
+    background: #a9674d;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .skills-page-hero {
+        padding: 80px 0;
+    }
+
+    .technical-skills-section,
+    .skills-approach-section {
+        padding: 80px 0;
+    }
+
+    .skills-cta-card {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .skills-page-title {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .skills-page-intro {
+        font-size: 15px;
+    }
+
+    .skills-hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-page-card {
+        padding: 25px;
+    }
+
+    .skills-cta-card {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .skills-page-title {
+        font-size: 37px;
+    }
+
+    .skill-page-card {
+        display: block;
+    }
+
+    .skill-card-icon {
+        margin-bottom: 20px;
+    }
+
+}
